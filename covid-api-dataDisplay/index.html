@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Covid DataDisplay</title>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<h1 class="pt-4 mb-4 text-center text-gradient-right-left">COVID19-India Dashboard</h1>
+<div id=”chart”>
+  <marquee class="pt-2 pb-2 text-slide-heading" behavior="scroll" direction="left">Here is some slide-in text... coming
+    from the right.</marquee>
+</div>
+
+<!-- map section -->
+<div class="d-flex align-items-center">
+  <img class="map" src="./assets/Cmap009India_generated.jpg">
+  <!-- map section end -->
+
+  <div class="d-flex flex-column">
+    <div class="container">
+      <!-- Card stats -->
+      <div class="card card-stats card-style">
+        <!-- Card body -->
+        <div class="card-full">
+          <div class="col">
+            <h5 class="card-title text-uppercase text-muted" id="total-cases">Total Cases</h5>
+            <span class="h2 font-weight-bold total_cases color-red count">0</span>
+          </div>
+          <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card card-stats card-style">
+        <!-- Card body -->
+        <div class="card-full">
+          <div class="col">
+            <h5 class="card-title text-uppercase text-muted" id="deaths">Deaths</h5>
+            <span class="h2 font-weight-bold deaths color-blue count">0</span>
+          </div>
+          <div class="icon icon-shape bg-gradient-blue text-white rounded-circle shadow">
+            <i class="fas fa-procedures"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card card-stats card-style">
+        <!-- Card body -->
+        <div class="card-full">
+          <div class="col">
+            <h5 class="card-title text-uppercase text-muted" id="recoverd">Recovered</h5>
+            <span class="h2 font-weight-bold recovered color-green count">0</span>
+          </div>
+          <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
+            <i class="fas fa-child"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card card-stats card-style">
+        <!-- Card body -->
+        <div class="card-full">
+          <div class="col">
+            <h5 class="card-title text-uppercase text-muted" id="new-cases">New Cases Today</h5>
+            <span class="h2 font-weight-bold new_cases color-orange count">0</span>
+          </div>
+          <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
+            <i class="fas fa-bell"></i>
+          </div>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- points -->
+<!-- points end  -->
+
+<!-- cards section -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <img src="./assets/covid-09_generated.jpg" class="card-img-top card-image" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="./assets/covid-09_generated.jpg" class="card-img-top card-image" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="./assets/covid-09_generated.jpg" class="card-img-top card-image" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="./assets/covid-09_generated.jpg" class="card-img-top card-image" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="empty mb-4 mt-4">
+
+</div>
+<!-- cards section end -->
+</body>
+
+</html>
