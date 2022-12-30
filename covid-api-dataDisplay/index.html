@@ -24,8 +24,7 @@
 
 <h1 class="pt-4 mb-4 text-center text-gradient-right-left">COVID19-India Dashboard</h1>
 <div id=”chart”>
-  <marquee class="pt-2 pb-2 text-slide-heading" behavior="scroll" direction="left">Here is some slide-in text... coming
-    from the right.</marquee>
+  <marquee class="pt-2 pb-2 text-slide-heading" behavior="scroll" direction="left">In India there have been <span id="band" class="fw-bold"></span> confirmed cases of COVID-19 </marquee>
 </div>
 
 <!-- map section -->
@@ -33,7 +32,7 @@
   <img class="map" src="./assets/Cmap009India_generated.jpg">
   <!-- map section end -->
 
-  <div class="d-flex flex-column">
+  <div class="d-flex flex-column col-3">
     <div class="container">
       <!-- Card stats -->
       <div class="card card-stats card-style">
@@ -41,7 +40,7 @@
         <div class="card-full">
           <div class="col">
             <h5 class="card-title text-uppercase text-muted" id="total-cases">Total Cases</h5>
-            <span class="h2 font-weight-bold total_cases color-red count">0</span>
+            <span class="h2 font-weight-bold total_cases color-red count " id="TotalCases"></span>
           </div>
           <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
             <i class="fas fa-users"></i>
@@ -52,20 +51,8 @@
         <!-- Card body -->
         <div class="card-full">
           <div class="col">
-            <h5 class="card-title text-uppercase text-muted" id="deaths">Deaths</h5>
-            <span class="h2 font-weight-bold deaths color-blue count">0</span>
-          </div>
-          <div class="icon icon-shape bg-gradient-blue text-white rounded-circle shadow">
-            <i class="fas fa-procedures"></i>
-          </div>
-        </div>
-      </div>
-      <div class="card card-stats card-style">
-        <!-- Card body -->
-        <div class="card-full">
-          <div class="col">
-            <h5 class="card-title text-uppercase text-muted" id="recoverd">Recovered</h5>
-            <span class="h2 font-weight-bold recovered color-green count">0</span>
+            <h5 class="card-title text-uppercase text-muted" >Recovered</h5>
+            <span class="h2 font-weight-bold recovered color-green count" id="recovered"></span>
           </div>
           <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
             <i class="fas fa-child"></i>
@@ -76,8 +63,8 @@
         <!-- Card body -->
         <div class="card-full">
           <div class="col">
-            <h5 class="card-title text-uppercase text-muted" id="new-cases">New Cases Today</h5>
-            <span class="h2 font-weight-bold new_cases color-orange count">0</span>
+            <h5 class="card-title text-uppercase text-muted" >Total Vaccinated</h5>
+            <span class="h2 font-weight-bold new_cases color-orange count" id="totalVaccinated">0</span>
           </div>
           <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
             <i class="fas fa-bell"></i>
